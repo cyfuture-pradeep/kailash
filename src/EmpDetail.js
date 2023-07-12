@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 
 const EmpDetail = () => {
@@ -6,20 +7,13 @@ const EmpDetail = () => {
     const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch('https://finalapp-f4ed7-default-rtdb.firebaseio.com/postData/${empid}.json' )
-        //fetch(`https://finalapp-f4ed7-default-rtdb.firebaseio.com/postData/${empid}.json`)
 
-            .then((res) => {
-                console.log("Data entered successful")
-                return res.json();
-            })
-            .then((resp) => {
-                empdatachange(resp);
-            })
-            .catch((err) => {
-                console.log(err.message);
-            });
-    }, []);
+    axios.get(`https://finalapp-f4ed7-default-rtdb.firebaseio.com/usersDetails.json/`).then((result) => {
+        let arr = Object.values(result.data);
+        let obj = Object.values(arr.find(ele => Object.values(ele)[0].id == empid))[0];
+        empdatachange(obj);
+
+    })})
 
     return (
         <div>

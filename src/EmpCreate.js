@@ -22,10 +22,10 @@ const EmpCreate = () => {
         e.preventDefault();
         let id = Math.floor(1000 + Math.random() * 9000);
         const empdata={name,email,phone,active , id : id};
-          console.log(empdata)
+        //   console.log(empdata)
 
         axios.post(`https://finalapp-f4ed7-default-rtdb.firebaseio.com/usersDetails/${id}` + ".json" , empdata ).then((e) => {
-            console.log("Data added")
+            // console.log("Data added")
             navigate('/');
         }).catch((error) => {
             console.log(error);

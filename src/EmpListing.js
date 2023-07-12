@@ -30,8 +30,7 @@ const EmpListing = () => {
   
   , {})
 
- console.log(updatedArray)
- console.log(obj)
+
  setEmpData(updatedArray);
  
  axios.put(`https://finalapp-f4ed7-default-rtdb.firebaseio.com/usersDetails/` + ".json" , obj ).then((e) => {
@@ -56,7 +55,6 @@ const EmpListing = () => {
 
   useEffect(() => {
     axios.get(`https://finalapp-f4ed7-default-rtdb.firebaseio.com/usersDetails.json/`).then((result) => {
-        console.log(result.data)
       let arr = Object.entries(result.data);
       setEmpData(arr.map((ele) => {
         const item = Object.values(ele[1])[0];
@@ -92,7 +90,7 @@ const EmpListing = () => {
                 empdata.map((ele,id) => {
                   return (
                     
-                    <tr key={ele}>
+                    <tr key={id}>
                     
                       <td>{id+1}</td>
                       <td>{ele.name}</td>
