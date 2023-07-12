@@ -1,0 +1,48 @@
+
+/*    !* Style for the div container *!*/
+/*.employee-details {*/
+/*    margin: 20px;*/
+/*    padding: 20px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 5px;*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*!* Style for the employee name *!*/
+/*.employee-name {*/
+/*    font-size: 24px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*!* Style for the ID *!*/
+/*.employee-id {*/
+/*    font-size: 18px;*/
+/*    color: #666;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*!* Style for the contact details *!*/
+/*.contact-details {*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*!* Style for the email and phone *!*/
+/*.contact-item {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*!* Style for the "Back to Listing" button *!*/
+/*.back-button {*/
+/*    display: inline-block;*/
+/*    margin-top: 20px;*/
+/*    padding: 10px 20px;*/
+/*    background-color: #ff0000;*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*!* Hover style for the "Back to Listing" button *!*/
+/*.back-button:hover {*/
+/*    background-color: #cc0000;*/
+/*}*/
